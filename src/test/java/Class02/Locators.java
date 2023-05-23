@@ -20,14 +20,14 @@ public class Locators {
 
         Thread.sleep(2000);
 
-        userNameTxtBox.clear(); // use this to clear the text box
+        userNameTxtBox.clear(); // use this to clear the text box and can reuse web element
 
         userNameTxtBox.sendKeys("Admin");
 
-        WebElement pass = driver.findElement(By.name("txtPassword")); // find the password
+        WebElement pass = driver.findElement(By.name("txtPassword")); // finds the password
         pass.sendKeys("Hum@nhrm123");
 
-        driver.findElement(By.className("button")); //find the login button
+        driver.findElement(By.className("button")); //finds the login button
         WebElement loginBtn = driver.findElement(By.className("button"));
         loginBtn.click();
 
@@ -37,6 +37,6 @@ public class Locators {
         System.out.println(text); // prints out on IntelliJ
 
 
-        driver.findElement(By.partialLinkText("Recru")).click();
+        driver.findElement(By.partialLinkText("Recru")).click(); //partial link text uses part of the text
     }
 }
