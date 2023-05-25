@@ -18,8 +18,8 @@ public class Homework1 {
 
         driver.manage().window().maximize();
 
-       WebElement firstName = driver.findElement(By.xpath("//input[@name='first_name']"));
-       firstName.sendKeys("Moe");
+        WebElement firstName = driver.findElement(By.xpath("//input[@name='first_name']"));
+        firstName.sendKeys("Moe");
 
         WebElement lastName = driver.findElement(By.xpath("//input[@name='last_name']"));
         lastName.sendKeys("Szyslak");
