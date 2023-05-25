@@ -6,15 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Homework {
-    // HW  (only use XPATH)
-    //navigate to fb.com
-    //click on create new account
-    //fill up all the text boxes
-    //close the popup
-    //close the browser
+    //HW  (only use XPATH)
+    //Navigate to fb.com
+    //Click on create new account
+    //Fill up all the text boxes
+    //Close the popup
+    //Close the browser
 
     //Note : in order for ur code to work
-    //you have to put Thread.sleep(2000) after clicking on Create new account
+    //You have to put Thread.sleep(2000) after clicking on Create new account
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
