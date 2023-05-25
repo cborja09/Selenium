@@ -10,14 +10,14 @@ public class XpathDemo {
     private static Alert password;
 
     public static void main(String[] args) {
-        //initiate the instance of the driver
+        //initiate the instance of th webDriver
         WebDriver driver = new ChromeDriver();
         //driver.get to navigate to the website
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
         //maximize the screen
         driver.manage().window().maximize();
 
-        //userName text box through xpath
+        //userName textBox through xpath
         WebElement userName = driver.findElement(By.xpath("//input[@id='txtUsername']"));
         userName.sendKeys("Admin");
 
