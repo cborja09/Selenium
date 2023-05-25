@@ -13,8 +13,8 @@ public class Homework {
     //Close the popup
     //Close the browser
 
-    //Note : in order for ur code to work
-    //You have to put Thread.sleep(2000) after clicking on Create new account
+    //Note: in order for your code to work
+    //You have to put Thread.sleep(2000) after clicking on create new account
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
