@@ -2,22 +2,30 @@ package Utlis;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class CommonMethods {
 
 
     public static WebDriver driver;
-    public static void openBrowserAndLaunchApplication(String url){
-        //create instance
-       driver = new ChromeDriver();
-        //navigate to url
-        driver.get(url);
-        //maximize the screen
+    public static void openBrowserAndLaunchApplication(String URL, String browser){
+
+        switch (browser){
+            case "chrome":
+                driver=new ChromeDriver();
+                break;
+
+            case "firefox":
+                driver=new FirefoxDriver();
+                break;
+        }
+        //maximize the window
         driver.manage().window().maximize();
+        driver.get(URL);
+
     }
 
     public static void closeBrowser(){
-        //quit the browser
-        driver.quit();
+
     }
 }
