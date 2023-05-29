@@ -22,10 +22,11 @@ public class CommonMethods {
         //maximize the window
         driver.manage().window().maximize();
         driver.get(URL);
-
     }
 
     public static void closeBrowser(){
-
+        if(driver!=null){
+            driver.quit();
+        }
     }
 }
