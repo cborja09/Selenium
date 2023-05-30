@@ -11,15 +11,25 @@ public class MultiDD extends CommonMethods {
         String browser = "chrome";
         openBrowserAndLaunchApplication(url, browser);
 
-        // is to select multiple options from multi select dropdown
+        //is to select multiple options from multi select dropdown
 
-        // 1. inspect and find the element that has the dropdown
+        //1. inspect and find the element that has the dropdown
         WebElement DD = driver.findElement(By.xpath("//select[@name='States']"));
-        // 2. create an object of the select class and pass in the parameters the element dropdown
+        //2. create an object of the select class and pass in the parameters the element dropdown
         Select sel = new Select(DD);
         //check if the dropdown is multi select
         boolean isMul = sel.isMultiple(); //checks if dropdown is multiple.
         System.out.println("the dropdown is multi select :"+isMul);
+
+        //select by visual text
+        sel.selectByVisibleText("California");
+
+        //select by value
+        sel.selectByValue("Ohio");
+
+        //select by index
+        sel.selectByIndex(7);
+
 
     }
 }
