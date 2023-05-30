@@ -29,5 +29,9 @@ public class DropDowns extends CommonMethods {
         Thread.sleep(2000);
         //another method
         sel.selectByValue("26");
+        //for observation
+        Thread.sleep(2000);
+        //another method
+        sel.selectByIndex(0);
     }
 }
