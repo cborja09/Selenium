@@ -30,6 +30,9 @@ public class MultiDD extends CommonMethods {
         //select by index
         sel.selectByIndex(7);
 
+        //we have deselect methods also available for multi select dropdown
+        sel.deselectByVisibleText("Ohio");
+
 
     }
 }
