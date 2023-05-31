@@ -25,5 +25,14 @@ public class Frames extends CommonMethods {
         Select sel = new Select(dd);
         sel.selectByVisibleText("Baby Cat");
 
+        //switch the focus to the main page aka main window
+        driver.switchTo().defaultContent();
+
+        //switch to frame containing text box
+        driver.switchTo().frame("frame1");
+
+        WebElement textBox = driver.findElement(By.xpath("//input"));
+        textBox.sendKeys("abracadabra");
+
     }
 }
