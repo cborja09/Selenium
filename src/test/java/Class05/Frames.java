@@ -34,5 +34,13 @@ public class Frames extends CommonMethods {
         WebElement textBox = driver.findElement(By.xpath("//input"));
         textBox.sendKeys("abracadabra");
 
+        //click on the checkbox
+        //switch to iframe using web element
+        WebElement frame3 = driver.findElement(By.xpath("//iframe[@id='frame3']"));
+        driver.switchTo().frame(frame3);
+
+        driver.findElement(By.id("a")).click();
+
+
     }
 }
