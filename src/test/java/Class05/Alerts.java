@@ -11,8 +11,8 @@ public class Alerts extends CommonMethods {
         String browser = "chrome";
         openBrowserAndLaunchApplication(url, browser);
 
-        WebElement alertt1Btn = driver.findElement(By.xpath("//button[@onclick='myAlertFunction()']"));
-        alertt1Btn.click();
+        WebElement alert1Btn = driver.findElement(By.xpath("//button[@onclick='myAlertFunction()']"));
+        alert1Btn.click();
 
         //add sleep so you can observe the click
         Thread.sleep(3000);
