@@ -17,7 +17,7 @@ public class DropDowns extends CommonMethods {
         //because the DOM doesn't have first name by default
         //it only shows up after clicking on create new account
         //and the code takes some time to appear in the DOM for first name
-        //so we must add a sleep here
+        //we must add a sleep here
         Thread.sleep(2000);
         // 1. find the element associated with the dropdown
         WebElement days = driver.findElement(By.xpath("//select[@id='day']"));
