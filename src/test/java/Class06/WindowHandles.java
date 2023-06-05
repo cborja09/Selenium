@@ -40,5 +40,13 @@ public class WindowHandles extends CommonMethods {
         }
         //when the focus is shifted to correct page
         System.out.println("the current page under focus is : "+driver.getTitle());
+
+        //after switching to the page Google Account Help, we can deal with any element we want to in a regular manner
+
+        //switch my focus back to main page
+        driver.switchTo().window(mainPageHandle);
+
+        //check the focus
+        System.out.println("the focus is on : "+driver.getTitle());
     }
 }
