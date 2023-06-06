@@ -1,6 +1,7 @@
 package Class06;
 
 import Utlis.CommonMethods;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -28,5 +29,13 @@ public class ExplicitWait extends CommonMethods {
         //click on the button
         WebElement eBtn = driver.findElement(By.xpath("//button[text()='Button']"));
         eBtn.click();
+
+        //click on the alert button
+        WebElement alertBtn = driver.findElement(By.xpath("//button[@id='alert']"));
+        alertBtn.click();
+
+        wait.until(ExpectedConditions.alertIsPresent());
+        Alert aler =driver.switchTo().alert();
+        aler.accept();
     }
 }
