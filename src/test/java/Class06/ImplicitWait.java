@@ -18,5 +18,8 @@ public class ImplicitWait extends CommonMethods {
         WebElement createNewAccountBtn = driver.findElement(By.xpath("//a[text()='Create new account']"));
         createNewAccountBtn.click();
 
+        //Send the first name
+        WebElement firstName = driver.findElement(By.xpath("//input[@name='firstname']"));
+        sendText("abracadabra",firstName);
     }
 }
