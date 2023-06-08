@@ -17,13 +17,20 @@ public class Tables extends CommonMethods {
         String allText = wholeTable.getText();
         System.out.println(allText);
 
-        System.out.println("***********************");
+        System.out.println("-----------------------------");
 
         //print all rows of the table
         List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr"));
         for (WebElement row:allRows){
             String rowText = row.getText();
             System.out.println(rowText);
+        }
+        System.out.println("-----------------------------");
+        //print each and every data in the table
+        List<WebElement> allCellData = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr/td"));
+        for(WebElement cell:allCellData){
+            String cellData = cell.getText();
+            System.out.println(cellData);
         }
     }
 }
