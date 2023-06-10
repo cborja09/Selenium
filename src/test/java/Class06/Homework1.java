@@ -22,7 +22,7 @@ public class Homework1 extends CommonMethods {
         WebElement startBtn = driver.findElement(By.xpath("//button[@id='startButton']"));
         startBtn.click();
 
-        //Print the text "welcome to syntax technologies"
+        //Print the text "welcome syntax technologies"
         WebElement textMessage = driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.textToBePresentInElement(textMessage, "Welcome Syntax Technologies"));
