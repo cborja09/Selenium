@@ -32,6 +32,8 @@ public class DynamicTable2 extends CommonMethods {
             String id = allIds.get(i).getText();
             if (id.equals("53502A")){
                 System.out.println("click on the check box on row number "+(i+1));
+                WebElement checkBox = driver.findElement(By.xpath("//table/tbody/tr[" + (i + 1) + "]/td[1]"));
+                checkBox.click();
             }
         }
     }
