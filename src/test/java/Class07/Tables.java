@@ -24,7 +24,7 @@ public class Tables extends CommonMethods {
         for (WebElement row:allRows){
             String rowText = row.getText();
             if (rowText.contains("Google")) //Modified task
-            System.out.println(rowText);
+                System.out.println(rowText);
         }
 
         System.out.println("-----------------------------");
