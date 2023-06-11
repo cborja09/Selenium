@@ -3,7 +3,6 @@ package Class08;
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class DynamicTable2 extends CommonMethods {
