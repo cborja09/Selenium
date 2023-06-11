@@ -3,7 +3,6 @@ package Class07;
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class Tables extends CommonMethods {
@@ -20,9 +19,11 @@ public class Tables extends CommonMethods {
         System.out.println("-----------------------------");
 
         //Print all the rows data of the table
+        //Modified: print the row that contains "Google" as company name
         List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr"));
         for (WebElement row:allRows){
             String rowText = row.getText();
+            if (rowText.contains("Google")) //Modified task
             System.out.println(rowText);
         }
 
