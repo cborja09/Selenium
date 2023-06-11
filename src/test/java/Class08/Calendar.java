@@ -18,7 +18,7 @@ public class Calendar extends CommonMethods {
         //Select the date August 4 2023
         boolean monthFound = false;
         while (!monthFound) {
-            //get the month and check if it is the desired one
+            //Get the month and check if it is the desired one
             WebElement month = driver.findElement(By.xpath("(//span[@class='ui-datepicker-month'])[1]"));
             String currentMonth = month.getText();
             if (currentMonth.equals("August")) {
