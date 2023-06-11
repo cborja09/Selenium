@@ -19,7 +19,7 @@ public class Tables extends CommonMethods {
 
         System.out.println("-----------------------------");
 
-        //Print all the rows of the table
+        //Print all the rows data of the table
         List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr"));
         for (WebElement row:allRows){
             String rowText = row.getText();
@@ -27,7 +27,7 @@ public class Tables extends CommonMethods {
         }
 
         System.out.println("-----------------------------");
-        //print each and every data in the table
+        //Print each and every column data in the table
         List<WebElement> allCellData = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr/td"));
         for(WebElement cell:allCellData){
             String cellData = cell.getText();
