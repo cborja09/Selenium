@@ -3,7 +3,6 @@ package Class08;
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class TablesDynamic3 extends CommonMethods {
@@ -26,5 +25,15 @@ public class TablesDynamic3 extends CommonMethods {
 
         //Get all the ids from the table into the list
         List<WebElement> allIds = driver.findElements(By.xpath("//table/tbody/tr/td[2]"));
+
+        //Iterate through the ids and find the id 53481A and click on associated checkbox
+        for (int i = 0; i < allIds.size(); i++) {
+            String id = allIds.get(i).getText();
+            if (id.equals("53481A")) {
+                System.out.println("click on the check box on row number " + (i + 1));
+                WebElement checkBox = driver.findElement(By.xpath("//table/tbody/tr[" + (i + 1) + "]/td[1]"));
+                checkBox.click();
+            }
+        }
     }
 }
