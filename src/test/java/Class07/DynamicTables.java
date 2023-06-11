@@ -33,7 +33,6 @@ public class DynamicTables extends CommonMethods {
                System.out.println("the id is on row number "+(i+1));
                //WebElement row = driver.findElement(By.xpath(" //table/tbody/tr[" + (i + 1) + "]"));
                //System.out.println(row.getText());
-
            }
         }
     }
