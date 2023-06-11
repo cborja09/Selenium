@@ -26,7 +26,7 @@ public class DynamicTable2 extends CommonMethods {
         //Get all the ids from the table into the list
         List<WebElement> allIds = driver.findElements(By.xpath("//table/tbody/tr/td[2]"));
 
-        //Iterate through the ids and find the id 53502A anc click on associated checkbox
+        //Iterate through the ids and find the id 53502A and click on associated checkbox
         for (int i = 0; i < allIds.size(); i++) {
             String id = allIds.get(i).getText();
             if (id.equals("53502A")){
