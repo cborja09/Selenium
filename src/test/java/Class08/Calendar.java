@@ -32,7 +32,7 @@ public class Calendar extends CommonMethods {
                 }
                 monthFound = true;
             } else {
-                WebElement nextBtn = driver.findElement(By.xpath("(//a[@class='ui-datepicker-next ui-corner-all'])")); //Click on the next page
+                WebElement nextBtn = driver.findElement(By.xpath("(//a[@class='ui-datepicker-next ui-corner-all'])")); //Click on next
                 nextBtn.click();
             }
         }
