@@ -4,6 +4,8 @@ import Utlis.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class DynamicTable2 extends CommonMethods {
     public static void main(String[] args) {
         String url = "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login";
@@ -21,5 +23,16 @@ public class DynamicTable2 extends CommonMethods {
         //Click on PIM
         WebElement pimtBtn = driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']"));
         pimtBtn.click();
+
+        //Get all the ids from the table into the list
+        List<WebElement> allIds = driver.findElements(By.xpath("//table/tbody/tr/td[2]"));
+
+        //Iterate through the ids and find the id 53502A anc click on associated checkbox
+        for (int i = 0; i < allIds.size(); i++) {
+            String id = allIds.get(i).getText();
+            if (id.equals("53502A")){
+                System.out.println("click on the check box on row number "+(i+1));
+            }
+        }
     }
 }
