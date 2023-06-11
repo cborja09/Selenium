@@ -24,7 +24,7 @@ public class DynamicTables extends CommonMethods {
         WebElement pimtBtn = driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']"));
         pimtBtn.click();
 
-        //Print the row number that has the id 56247A
+        //Print the row number that has the id 56768A
         List<WebElement> allIDs = driver.findElements(By.xpath("//table/tbody/tr/td[2]"));
         //Look for 56768A
         for (int i = 0; i < allIDs.size(); i++) {
