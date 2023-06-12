@@ -36,5 +36,6 @@ public class RightAndDoubleClickActions extends CommonMethods {
         action.doubleClick(doubleClick).perform();
 
 
+
     }
 }
