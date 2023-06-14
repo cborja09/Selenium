@@ -10,7 +10,7 @@ public class JSExecutorDemo2 extends CommonMethods {
         openBrowserAndLaunchApplication(url, browser);
 
         //Perform a scroll operation
-        //Using Java Script
+        //Using JavaScript
 
         JavascriptExecutor js =(JavascriptExecutor) driver;
         //Scroll down
