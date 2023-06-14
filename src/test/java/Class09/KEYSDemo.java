@@ -14,5 +14,9 @@ public class KEYSDemo extends CommonMethods {
         //Locate the text box username
         WebElement userName = driver.findElement(By.id("ctl00_MainContent_username"));
         userName.sendKeys("Tester",Keys.TAB);
+
+        //Locate the password text box
+        WebElement password = driver.findElement(By.id("ctl00_MainContent_password"));
+        password.sendKeys("test",Keys.ENTER);
     }
 }
