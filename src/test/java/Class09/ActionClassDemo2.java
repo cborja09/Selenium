@@ -24,5 +24,9 @@ public class ActionClassDemo2 extends CommonMethods {
         Actions action = new Actions(driver);
         action.dragAndDrop(drag,drop).perform();
 
+
+
+
+
     }
 }
